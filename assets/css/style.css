@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
+  border: 6px solid rgba(128, 0, 0, 1.0);
   border-top-color: #d2f9eb;
   border-radius: 50%;
   width: 60px;
@@ -91,13 +91,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #1acc8d;
+  background: rgba(128, 0, 0, 0.8);
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #2be4a2;
+  background: rgba(128, 0, 0, 1.0);
   color: #fff;
 }
 
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(1, 4, 136, 0.9);
+  background: rgba(128, 0, 0, 0.8);
 }
 
 #header.header-transparent {
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(1, 4, 136, 0.9);
+  background: rgba(128, 0, 0, 0.8);
   height: 60px;
 }
 
@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(13, 18, 252, 0.6);
+  background: rgba(128, 0, 0, 0.7); 
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background: rgba(128, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
