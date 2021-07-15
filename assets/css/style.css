@@ -777,7 +777,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
+  background: url("../img/about.svg") center center no-repeat;
   background-size: contain;
   min-height: 300px;
 }
@@ -1067,7 +1067,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #1acc8d !important;
+  background-color: #fff !important;
 }
 
 @media (min-width: 1024px) {
