@@ -923,47 +923,8 @@ section {
 } */
 
 /*--------------------------------------------------------------
-# Counts
+# Details
 --------------------------------------------------------------*/
-/* .counts {
-  background: #f5f5ff;
-  padding: 70px 0 60px;
-}
-
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #1acc8d;
-  padding: 12px;
-  color: #fff;
-  border-radius: 50px;
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #010483;
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-} */
-
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
@@ -996,6 +957,49 @@ section {
   margin-bottom: 0;
 }
 
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: #f5f5ff;
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #800000CC;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #800000CC;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
@@ -1133,6 +1137,7 @@ section {
 .team .member .pic {
   border-radius: 4px;
   overflow: hidden;
+  min-height: 240px;
 }
 
 .team .member img {
@@ -1157,8 +1162,8 @@ section {
 .team .member h4 {
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: #01036f;
+  font-size: 13px;
+  color: rgba(128, 0, 0, 0.8);
   position: relative;
   padding-bottom: 10px;
 }
@@ -1169,7 +1174,7 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: #0d12fc;
+  background: rgba(128, 0, 0, 0.7);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1178,7 +1183,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #01036f;
+  color: rgba(128, 0, 0, 0.8);
 }
 
 .team .member .social {
@@ -1187,14 +1192,97 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #01036f;
+  color: rgba(128, 0, 0, 0.8);
 }
 
 .team .member .social a:hover {
-  color: #1acc8d;
+  color: rgba(128, 0, 0, 1.0);
 }
 
 .team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+
+/*--------------------------------------------------------------
+# protoype
+--------------------------------------------------------------*/
+.protoype {
+  background: #fff;
+}
+
+.protoype .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.protoype .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.protoype .member img {
+  transition: all ease-in-out 0.4s;
+}
+
+.protoype .member:hover img {
+  transform: scale(1.1);
+}
+
+.protoype .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.protoype .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgba(128, 0, 0, 0.8);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.protoype .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: rgba(128, 0, 0, 0.8);
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.protoype .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: rgba(128, 0, 0, 0.8);
+}
+
+.protoype .member .social {
+  margin-top: 10px;
+}
+
+.protoype .member .social a {
+  transition: color 0.3s;
+  color: rgba(128, 0, 0, 0.8);
+}
+
+.protoype .member .social a:hover {
+  color: rgba(128, 0, 0, 1.0);
+}
+
+.protoype .member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
@@ -1293,21 +1381,22 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #1acc8d;
+  background: rgba(128, 0, 0, 1.0);
 }
 
-.pricing .advanced {
+/* .pricing .advanced {
   width: 200px;
   position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
   background: #1acc8d;
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -1399,7 +1488,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #3f43fd;
+  color: rgba(128, 0, 0, 0.8);
   float: left;
   width: 44px;
   height: 44px;
@@ -1416,14 +1505,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #010483;
+  color: rgba(128, 0, 0, 0.8);;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #0205a1;
+  color: black;
 }
 
 .contact .info .email, .contact .info .phone {
@@ -1431,7 +1520,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1acc8d;
+  background: rgba(128, 0, 0, 1.0);
   color: #fff;
 }
 
@@ -1468,7 +1557,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: rgba(128, 0, 0, 0.8);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1488,7 +1577,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid rgba(128, 0, 0, 0.8);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1509,7 +1598,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1acc8d;
+  background: rgba(128, 0, 0, 0.8);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1518,7 +1607,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #34e5a6;
+  background: rgba(128, 0, 0, 1.0);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1543,7 +1632,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010351;
+  background: #800000CC;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1555,9 +1644,9 @@ section {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  background: #800000CC;
   color: #fff;
-  border-top: 4px solid #1acc8d;
+  border-top: 4px solid #800000CC;
   text-align: center;
   padding: 30px 20px;
 }
@@ -1592,8 +1681,8 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1acc8d;
-  color: #fff;
+  background: #fff;
+  color: #800000CC;
   text-decoration: none;
 }
 
@@ -1617,7 +1706,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #61ebba;
+  color: #800000CC;
   font-size: 18px;
   line-height: 1;
 }
@@ -1640,12 +1729,12 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #4be8b0;
+  color: #800000CC;
 }
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #800000CC;
   padding: 6px 10px 6px 15px;
   position: relative;
   border-radius: 50px;
@@ -1666,18 +1755,18 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1acc8d;
+  background: #800000CC;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #149f6e;
+  background: #800000CC;
 }
 
 #footer .copyright {
-  border-top: 1px solid #010479;
+  border-top: 1px solid #fff;
   text-align: center;
   padding-top: 30px;
 }
